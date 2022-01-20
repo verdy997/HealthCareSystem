@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\PatientsArchiveView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\WorkInabilitiesListView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\WorkInabilityFinalView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ExaminationsListView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ExaminationView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\LogInView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddOrderView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PatientCardView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PatientsListView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PrescriptionsListView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PrescriptionView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VaccinationsListView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\VaccinationView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\WaitingRoomView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\WorkInabilityView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\PatientsArchiveView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\WorkInabilitiesListView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\WorkInabilityFinalView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ExaminationsListView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ExaminationView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\LogInView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\BasicView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddOrderView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PatientCardView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PatientsListView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PrescriptionsListView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PrescriptionView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VaccinationsListView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\VaccinationView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\WaitingRoomView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\WorkInabilityView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

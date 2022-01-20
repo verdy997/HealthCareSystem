@@ -1,0 +1,98 @@
+﻿<Window x:Class="HealthCareSystem.ViewModels.WorkInabilityFinalView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HealthCareSystem.ViewModels"
+        mc:Ignorable="d"
+        Title="WorkInability" Height="600" Width="1000" Background="Silver" WindowStartupLocation="CenterScreen">
+    <Grid Margin="50">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TextBlock Text="Práce neschopnosť" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <GroupBox Header="Meno" FontSize="20" HorizontalAlignment="Stretch" Margin="0,0,30,0">
+                    <TextBlock Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" FontSize="20" FontWeight="Demibold" HorizontalAlignment="Center"/>
+                </GroupBox>
+            </Grid>
+            <Grid Grid.Column="1">
+                <GroupBox Header="Priezvisko" FontSize="20" HorizontalAlignment="Stretch" Margin="30,0,0,0">
+                    <TextBlock Text="{Binding Surname, UpdateSourceTrigger=PropertyChanged}" FontSize="20" FontWeight="Demibold" HorizontalAlignment="Center"/>
+                </GroupBox>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <GroupBox Header="Zamestnávateľ" FontSize="20" HorizontalAlignment="Stretch" Margin="0,0,30,0">
+                    <TextBlock Text="{Binding Employer, UpdateSourceTrigger=PropertyChanged}" FontSize="20" FontWeight="Demibold" HorizontalAlignment="Center"/>
+                </GroupBox>
+            </Grid>
+            <Grid Grid.Column="1">
+                <GroupBox Header="Bydlisko" FontSize="20" HorizontalAlignment="Stretch" Margin="30,0,0,0">
+                    <TextBlock Text="{Binding Address, UpdateSourceTrigger=PropertyChanged}" FontSize="20" FontWeight="Demibold" HorizontalAlignment="Center"/>
+                </GroupBox>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <GroupBox Header="Miesto zdržiavania" FontSize="20" HorizontalAlignment="Stretch" Margin="0,0,30,0">
+                    <TextBlock Text="{Binding Place, UpdateSourceTrigger=PropertyChanged}" FontSize="20" FontWeight="Demibold" HorizontalAlignment="Center"/>
+                </GroupBox>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="4">
+            <Grid Grid.Column="0">
+                <GroupBox Header="Diagnóza" FontSize="20" HorizontalAlignment="Stretch" Margin="0,0,30,0">
+                    <TextBlock Text="{Binding Diagnosis, UpdateSourceTrigger=PropertyChanged}" FontSize="20" FontWeight="Demibold" HorizontalAlignment="Center"/>
+                </GroupBox>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <GroupBox Header="Vypísaná" FontSize="20" HorizontalAlignment="Stretch" Margin="0,0,30,0">
+                    <TextBlock Text="{Binding ActualDate, StringFormat={}{0:dd.MM.yyyy}, UpdateSourceTrigger=PropertyChanged}" FontSize="20"
+                               FontWeight="Demibold" HorizontalAlignment="Center"/>
+                </GroupBox>
+            </Grid>
+            <Grid Grid.Column="1">
+                <GroupBox Header="Dátum od" FontSize="20" HorizontalAlignment="Stretch" Margin="0,0,30,0">
+                    <TextBlock Text="{Binding StartDate, StringFormat={}{0:dd.MM.yyyy}, UpdateSourceTrigger=PropertyChanged}" FontSize="20"
+                               FontWeight="Demibold" HorizontalAlignment="Center"/>
+                </GroupBox>
+            </Grid>
+            <Grid Grid.Column="2">
+                <GroupBox Header="Dátum do" FontSize="20" HorizontalAlignment="Stretch" Margin="0,0,30,0">
+                    <TextBlock Text="{Binding EndDate, StringFormat={}{0:dd.MM.yyyy}, UpdateSourceTrigger=PropertyChanged}" FontSize="20"
+                               FontWeight="Demibold" HorizontalAlignment="Center"/>
+                </GroupBox>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>

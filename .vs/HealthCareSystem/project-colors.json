@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4c60ec95-de2d-44bc-a69a-7b4758d70a2e": {
+      "ProjectGuid": "4c60ec95-de2d-44bc-a69a-7b4758d70a2e",
+      "DisplayName": "HealthCareSystem",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "03c4be1c-1bca-4e7f-be9e-f2e26049a411": {
+      "ProjectGuid": "03c4be1c-1bca-4e7f-be9e-f2e26049a411",
+      "DisplayName": "HCDatabase",
+      "ColorIndex": 1
+    },
+    "e11673b4-7ad6-4ba6-84e4-91f368ef213d": {
+      "ProjectGuid": "e11673b4-7ad6-4ba6-84e4-91f368ef213d",
+      "DisplayName": "HealthCareDB",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

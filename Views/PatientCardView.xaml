@@ -1,0 +1,133 @@
+﻿<Window x:Class="HealthCareSystem.PatientCardView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HealthCareSystem"
+        mc:Ignorable="d"
+        Title="PatientCard" Height="800" Width="1300" ResizeMode="NoResize" Background="Silver" WindowStartupLocation="CenterScreen">
+    <Grid Margin="50">
+
+        <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Width="Auto" Height="Auto">
+            <TextBlock Text="Karta Pacienta" FontSize="25" FontWeight="Bold"></TextBlock>
+        </Grid>
+
+        <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Width="Auto" Height="Auto" Margin="0,50,0,0">
+            <TextBlock Text="Osobné údaje:" FontSize="20" FontWeight="SemiBold"></TextBlock>
+        </Grid>
+
+        <Grid Margin="0,100,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <GroupBox Grid.Column="0" Header="Meno" FontSize="20" HorizontalAlignment="Stretch" Margin="5,0,5,0">
+                    <TextBox Name="Name" VerticalContentAlignment="Center" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                </GroupBox>
+                <GroupBox Grid.Column="1" Header="Priezvisko" FontSize="20" HorizontalAlignment="Stretch" Margin="5,0,5,0">
+                    <TextBox Name="Surname" VerticalContentAlignment="Center" Text="{Binding Surname, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                </GroupBox>
+                <GroupBox Grid.Column="2" Header="Rodné Číslo" FontSize="20" HorizontalAlignment="Stretch" Margin="5,0,5,0">
+                    <TextBox Name="IdentificationNumber" VerticalContentAlignment="Center" Text="{Binding IdentificationNumber, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                </GroupBox>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <GroupBox Grid.Column="0" Header="Pohlavie" FontSize="20" HorizontalAlignment="Stretch" Margin="5,0,5,0">
+                    <TextBox VerticalContentAlignment="Center" Text="{Binding Gender, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                </GroupBox>
+                <GroupBox Grid.Column="1" Header="Ulica, číslo" FontSize="20" HorizontalAlignment="Stretch" Margin="5,0,5,0">
+                    <TextBox Name="Street"  VerticalContentAlignment="Center" Text="{Binding Street, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                </GroupBox>
+                <GroupBox Grid.Column="2" Header="Obec" FontSize="20" HorizontalAlignment="Stretch" Margin="5,0,5,0">
+                    <TextBox Name="City" VerticalContentAlignment="Center" Text="{Binding City, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                </GroupBox>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <GroupBox Grid.Column="0" Header="PSČ" FontSize="20" HorizontalAlignment="Stretch" Margin="5,0,5,0">
+                    <TextBox Name="PostCode"  VerticalContentAlignment="Center" Text="{Binding PostCode, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                </GroupBox>
+                <GroupBox Grid.Column="1" Header="Tel. číslo" FontSize="20" HorizontalAlignment="Stretch" Margin="5,0,5,0">
+                    <TextBox Name="PhoneNumber"  VerticalContentAlignment="Center" Text="{Binding PhoneNumber, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                </GroupBox>
+                <GroupBox Grid.Column="2" Header="E-mail" FontSize="20" HorizontalAlignment="Stretch" Margin="5,0,5,0">
+                    <TextBox Name="Email" VerticalContentAlignment="Center" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                </GroupBox>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <GroupBox Grid.Column="0" Header="Poisťovňa" FontSize="20" HorizontalAlignment="Stretch" Margin="5,0,5,0">
+                    <TextBox Name="Insurance" VerticalContentAlignment="Center" Text="{Binding Insurance, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                </GroupBox>
+                <GroupBox Grid.Column="1" Header="Výška (cm)" FontSize="20" HorizontalAlignment="Stretch" Margin="5,0,5,0">
+                    <TextBox Name="Height" VerticalContentAlignment="Center" Text="{Binding Height, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                </GroupBox>
+                <GroupBox Grid.Column="2" Header="Váha (kg)" FontSize="20" HorizontalAlignment="Stretch" Margin="5,0,5,0">
+                    <TextBox Name="Weight" VerticalContentAlignment="Center" Text="{Binding Weight, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                </GroupBox>
+            </Grid>
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <GroupBox Grid.Column="0" Header="Zamestnávateľ" FontSize="20" HorizontalAlignment="Stretch" Margin="5,0,5,0">
+                    <TextBox Name="Employer" VerticalContentAlignment="Center" Text="{Binding Employer, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                </GroupBox>
+                <GroupBox Grid.Column="1" Header="Alergie" FontSize="20" HorizontalAlignment="Stretch" Margin="5,0,5,0">
+                    <TextBox Name="Allergies" VerticalContentAlignment="Center" Text="{Binding Allergies, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                </GroupBox>
+            </Grid>
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Content="Vyšetrenia" Command="{Binding ShowExaminations}" FontWeight="Bold" FontSize="20" Width="130" Height="40"></Button>
+                <!--<Button Grid.Column="1" Content="Objednanie" Command="{Binding ShowOrder}" FontWeight="Bold" FontSize="20" Width="130" Height="40"></Button>-->
+                <Button Grid.Column="2" Content="Predpisy" Command="{Binding ShowPrescriptions}" FontWeight="Bold" FontSize="20" Width="130" Height="40"></Button>
+                <Button Grid.Column="3" Content="Očkovania" Command="{Binding ShowVaccinations}" FontWeight="Bold" FontSize="20" Width="130" Height="40"></Button>
+                <Button Grid.Column="4" Content="PN" Command="{Binding ShowWorkInabilities}" FontWeight="Bold" FontSize="20" Width="130" Height="40"></Button>
+            </Grid>
+            <Grid Grid.Row="6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="3" Content="Archívuj" Command="{Binding Archive}" FontWeight="Bold" FontSize="20" Width="130" Height="40"></Button>
+                <Button Grid.Column="4" Content="Uložiť" Command="{Binding Save}" FontWeight="Bold" FontSize="20" Width="130" Height="40"></Button>
+            </Grid>
+        </Grid>
+    </Grid>
+
+</Window>
